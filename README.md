@@ -1,4 +1,4 @@
-# notes
+# GrocNotes
 
 A new Flutter project.
 
