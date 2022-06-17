@@ -5,6 +5,7 @@ import 'package:notes/screen/home.dart';
 import 'package:notes/screen/splash.dart';
 import 'package:supercharged/supercharged.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
         title: 'Notes',
         theme: ThemeData(
+          appBarTheme: AppBarTheme(backgroundColor: '1E2F97'.toColor()),
           primaryColor: Colors.white,
           scaffoldBackgroundColor: 'ECECEC'.toColor(),
         ),
@@ -26,6 +28,6 @@ class MyApp extends StatelessWidget {
         routes: {
           Splash.id: (context) => Splash(),
           biometric.id: (context) => biometric()
-          });
+        });
   }
 }

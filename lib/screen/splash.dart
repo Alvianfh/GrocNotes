@@ -35,9 +35,10 @@ class _SplashState extends State<Splash> {
       backgroundColor: Theme.of(context).primaryColor,
       body: const Center(
         child: Image(
-          width: 200,
+          width: 500,
+          height: 500,
           image: AssetImage(
-            "assets/images/logo.png",
+            "assets/images/black.png",
           ),
         ),
       ),

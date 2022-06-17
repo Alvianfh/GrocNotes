@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notes/db/notesdb.dart';
 import 'package:notes/model/note.dart';
 import 'package:notes/screen/add_note.dart';
+import 'package:notes/screen/navbar.dart';
 import 'package:notes/screen/note_detail.dart';
 import 'package:notes/widget/card_widget.dart';
 
@@ -38,7 +39,9 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
+    drawer: NavBar(),
         appBar: AppBar(
+         
           title: Text(
             'Notes',
             style: TextStyle(fontSize: 24),
